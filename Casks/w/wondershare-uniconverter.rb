@@ -21,6 +21,8 @@ cask "wondershare-uniconverter" do
 
   app "Wondershare UniConverter #{version.major}.app"
 
+  uninstall quit: "com.Wondershare.UniConverter*"
+
   zap trash: [
     "/Users/Shared/.Wondershare*.dat",
     "~/Library/Application Support/com.Wondershare.UniConverter#{version.major}",
